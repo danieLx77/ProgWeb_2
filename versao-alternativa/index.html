@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - Versão Bulma</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/versions/bulma-no-dark-mode.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-5 has-text-black has-text-weight-bold" href="#top">
+                    <i class="fa-solid fa-code mr-2"></i>Meu Portfólio
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navContent">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navContent" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#sobre">Sobre</a>
+                    <a class="navbar-item" href="#habilidades">Habilidades</a>
+                    <a class="navbar-item" href="#projetos">Projetos</a>
+                    <a class="navbar-item" href="#interesses">Interesses</a>
+                    <a class="navbar-item" href="#contato">Contato</a>
+                    
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <button id="themeToggle" class="button is-small is-light">
+                                    <i class="fa-solid fa-moon"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="top" class="hero is-small pt-6">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-4 has-text-centered">
+                        <img class="profile-img shadow-sm" src="assets/img/foto.svg" alt="Foto de perfil">
+                        <div class="mt-3">
+                            <span class="tag is-primary is-medium">Sistemas de Informação</span>
+                            <span class="tag is-dark is-medium">UFLA</span>
+                        </div>
+                    </div>
+                    <div class="column is-8">
+                        <h1 class="title is-2">
+                            Olá! Eu sou <span class="has-text-primary">Daniel de Jesus Moreira</span>
+                        </h1>
+                        <p class="subtitle is-4 has-text-grey mt-2">
+                            Estudante do curso de Sistemas de Informação, interessado em desenvolvimento back-end (Java), procurando estudar mais sobre bancos de dados e frameworks.
+                        </p>
+                        <div class="buttons">
+    <a class="button is-primary" href="#projetos">
+        <span class="icon is-small"><i class="fa-solid fa-diagram-project"></i></span>
+        <span>Ver projetos</span>
+    </a>
+    <a class="button is-primary is-outlined" href="#contato">
+        <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
+        <span>Contato</span>
+    </a>
+    <a class="button is-light" href="https://github.com/danieLx77" target="_blank">
+        <span class="icon is-small"><i class="fa-brands fa-github"></i></span>
+        <span>GitHub</span>
+    </a>
+    <a class="button is-light is-outlined" href="https://www.linkedin.com/" target="_blank" style="color: #4a4a4a; border-color: #dbdbdb;">
+        <span class="icon is-small"><i class="fa-brands fa-linkedin"></i></span>
+        <span>LinkedIn</span>
+    </a>
+</div>
+                        
+                        <hr>
+
+                       <div class="columns mt-2">
+    <div class="column is-6">
+        <div class="box is-shadowless has-background-light" style="border: 1px solid var(--bulma-border-light); padding: 1.25rem;">
+            <div class="is-flex is-align-items-center mb-2">
+                <i class="fa-solid fa-graduation-cap has-text-primary mr-2 is-size-5"></i>
+                <strong class="is-size-6">Curso</strong>
+            </div>
+            <p class="has-text-grey is-size-6 mb-0">
+                Bacharelado em Sistemas de Informação - Universidade Federal de Lavras (UFLA).
+            </p>
+        </div>
+    </div>
+    <div class="column is-6">
+        <div class="box is-shadowless has-background-light" style="border: 1px solid var(--bulma-border-light); padding: 1.25rem;">
+            <div class="is-flex is-align-items-center mb-2">
+                <i class="fa-solid fa-bullseye has-text-primary mr-2 is-size-5"></i>
+                <strong class="is-size-6">Objetivo</strong>
+            </div>
+            <p class="has-text-grey is-size-6 mb-0">
+                Aprimorar habilidades em desenvolvimento back-end e participar de projetos práticos no semestre.
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <main class="container px-3 pb-6">
+        <section id="sobre" class="section px-0">
+            <div class="mb-5">
+                <h2 class="title is-4">Sobre</h2>
+                <p class="subtitle is-6 has-text-grey">Uma breve descrição do estudante e trajetória.</p>
+            </div>
+            <div class="columns">
+                <div class="column is-7">
+                    <div class="box">
+                        <p class="content">
+                            Sou estudante de Sistemas de Informação e gosto de construir aplicações focadas em sistemas de uso real, frequentemente estou procurando e contribuindo com projetos open-source.
+                        </p>
+                        <p class="has-text-grey">
+                            Nesta página, apresento minhas habilidades, interesses e projetos desenvolvidos.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-6 mb-4">Informações rápidas</p>
+                            <div class="content">
+                                <p><i class="fa-solid fa-location-dot has-text-primary mr-2"></i> <strong>Cidade:</strong> Lavras/MG</p>
+                                <p><i class="fa-solid fa-language has-text-primary mr-2"></i> <strong>Idiomas:</strong> Português, Inglês (intermediário)</p>
+                                <p><i class="fa-solid fa-laptop-code has-text-primary mr-2"></i> <strong>Área:</strong> Desenvolvimento Back-End (Java)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section px-0">
+            <div class="mb-5">
+                <h2 class="title is-4">Habilidades</h2>
+                <p class="subtitle is-6 has-text-grey">Tecnologias e competências.</p>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="card is-fullheight">
+                        <div class="card-content">
+                            <h3 class="title is-6 mb-3">Tecnologias</h3>
+                            <div class="tags">
+                                <span class="tag is-primary">Java</span>
+                                <span class="tag is-primary">SpringBoot</span>
+                                <span class="tag is-primary">PostgreSQL</span>
+                                <span class="tag is-info">JavaScript</span>
+                                <span class="tag is-info">Git/GitHub</span>
+                                <span class="tag is-info">Python</span>
+                                <span class="tag is-info">C++</span>
+                                <span class="tag is-info">HTML/CSS</span>
+                            </div>
+                            <hr>
+                            <h3 class="title is-6 mb-3">Competências</h3>
+                            <div class="content">
+                                <ul>
+                                    <li>Conhecimento da linguagem Java</li>
+                                    <li>Desenvolvimento de APIs RESTful</li>
+                                    <li>Organização de projetos e versionamento</li>
+                                    <li>Boas práticas de legibilidade de código</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="card is-fullheight">
+                     <div class="card-content">
+    <h3 class="title is-6 mb-4">Nível de familiaridade</h3>
+    
+    <div class="mb-4">
+        <div class="is-flex is-justify-content-space-between mb-1">
+            <span class="has-text-weight-semibold">Java</span>
+            <span class="is-size-7 has-text-grey">Intermediário/Avançado</span>
+        </div>
+        <progress class="progress is-primary" value="75" max="100">75%</progress>
+    </div>
+
+    <div class="mb-4">
+        <div class="is-flex is-justify-content-space-between mb-1">
+            <span class="has-text-weight-semibold">SpringBoot</span>
+            <span class="is-size-7 has-text-grey">Intermediário</span>
+        </div>
+        <progress class="progress is-primary" value="65" max="100">65%</progress>
+    </div>
+
+    <div class="mb-0">
+        <div class="is-flex is-justify-content-space-between mb-1">
+            <span class="has-text-weight-semibold">PostgreSQL</span>
+            <span class="is-size-7 has-text-grey">Básico/Intermediário</span>
+        </div>
+        <progress class="progress is-primary" value="50" max="100">50%</progress>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section px-0">
+    <div class="mb-5">
+        <h2 class="title is-4">Projetos</h2>
+        <p class="subtitle is-6 has-text-grey">Alguns trabalhos já desenvolvidos.</p>
+    </div>
+    <div class="columns is-multiline">
+        <div class="column is-4">
+                <div class="card is-fullheight is-flex is-flex-direction-column" 
+     style="border: 1px solid #dee2e6; border-radius: 0.375rem; box-shadow: none; background-color: white;">
+                <div class="card-content is-flex-grow-1">
+                    <div class="is-flex is-justify-content-space-between is-align-items-start mb-2">
+                        <h3 class="title is-6 mb-0">Jogo da Memória</h3>
+                        <div class="tags">
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">HTML</span>
+                             <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">CSS</span>
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">JS</span>
+                        </div>
+                    </div>
+                    <p class="is-size-7 has-text-grey mb-3">Implementação do jogo com verificação de vitória e reinício.</p>
+                    <div class="content is-small has-text-grey">
+                        <ul>
+                            <li>Matriz</li>
+                            <li>Manipulação do DOM</li>
+                            <li>Animação das cartas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 mt-auto">
+                    <div class="buttons">
+                        <a href="https://github.com/danieLx77/ProgWeb-UFLA" target="_blank" class="button is-small is-primary is-outlined">
+                            <span class="icon is-small"><i class="fa-brands fa-github"></i></span>
+                            <span>Repositório</span>
+                        </a>
+                        <a href="https://danielx77.github.io/ProgWeb-UFLA/" target="_blank" class="button is-small is-primary">
+                            <span class="icon is-small"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span>Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-4">
+                <div class="card is-fullheight is-flex is-flex-direction-column" 
+     style="border: 1px solid #dee2e6; border-radius: 0.375rem; box-shadow: none; background-color: white;">
+                <div class="card-content is-flex-grow-1">
+                    <div class="is-flex is-justify-content-space-between is-align-items-start mb-2">
+                        <h3 class="title is-6 mb-0">Página Pessoal</h3>
+                        <div class="tags">
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">Bulma</span>
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">HTML</span>
+                        </div>
+                    </div>
+                    <p class="is-size-7 has-text-grey mb-3">Implementação de página pessoal com seções e navegação.</p>
+                    <div class="content is-small has-text-grey">
+                        <ul>
+                            <li>Classes do Bulma</li>
+                            <li>Layout Responsivo</li>
+                            <li>Componentes Card</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 mt-auto">
+                    <div class="buttons">
+                        <a href="https://github.com/danieLx77/ProgWeb_2" target="_blank" class="button is-small is-primary is-outlined">
+                            <span class="icon is-small"><i class="fa-brands fa-github"></i></span>
+                            <span>Repositório</span>
+                        </a>
+                        <a href="#" target="_blank" class="button is-small is-primary">
+                            <span class="icon is-small"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span>Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-4">
+                <div class="card is-fullheight is-flex is-flex-direction-column" 
+     style="border: 1px solid #dee2e6; border-radius: 0.375rem; box-shadow: none; background-color: white;">
+                <div class="card-content is-flex-grow-1">
+                    <div class="is-flex is-justify-content-space-between is-align-items-start mb-2">
+                        <h3 class="title is-6 mb-0">Sistema de Cadastro de Usuários</h3>
+                        <div class="tags">
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">Java</span>
+                            <span class="tag has-background-white" style="border: 1px solid #dbdbdb; color: #4a4a4a;">Spring</span>
+                        </div>
+                    </div>
+                    <p class="is-size-7 has-text-grey mb-3">Sistema de cadastros de usuários para uma academia.</p>
+                    <div class="content is-small has-text-grey">
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 mt-auto">
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button is-small is-primary is-outlined">
+                            <span class="icon is-small"><i class="fa-brands fa-github"></i></span>
+                            <span>Repositório</span>
+                        </a>
+                        <a href="#" target="_blank" class="button is-small is-primary">
+                            <span class="icon is-small"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span>Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="interesses" class="section px-0">
+            <div class="mb-5">
+                <h2 class="title is-4">Interesses</h2>
+                <p class="subtitle is-6 has-text-grey">Áreas que eu gosto de estudar/pesquisar.</p>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="box">
+                        <div class="content">
+                            <ul>
+                                <li>Desenvolvimento Back-End</li>
+                                <li>Banco de Dados e modelagem</li>
+                                <li>Algoritmos e estruturas de dados</li>
+                                <li>Arquiteturas de Software</li>
+                                <li>Inteligência Artificial Aplicada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="box">
+                        <h3 class="title is-6 mb-2">Atividades</h3>
+                        <p class="has-text-grey mb-3">
+                            Participo de projetos acadêmicos e gosto de aprender criando e/ou participando de projetos.
+                        </p>
+                        <div class="tags">
+                            <span class="tag is-light"><i class="fa-solid fa-book mr-1"></i> Estudos</span>
+                            <span class="tag is-light"><i class="fa-solid fa-people-group mr-1"></i> Trabalho em equipe</span>
+                            <span class="tag is-light"><i class="fa-solid fa-terminal mr-1"></i> Projetos práticos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section px-0">
+            <div class="mb-5">
+                <h2 class="title is-4">Contato</h2>
+                <p class="subtitle is-6 has-text-grey">Como falar comigo.</p>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="box">
+                        <div class="content">
+                            <p><i class="fa-solid fa-envelope has-text-primary mr-2"></i> danieljesus7k@gmail.com</p>
+                            <p><i class="fa-brands fa-github has-text-primary mr-2"></i> <a href="https://github.com/danieLx77" class="has-text-link">github.com/danieLx77</a></p>
+                            <p><i class="fa-brands fa-linkedin has-text-primary mr-2"></i> <a href="#" class="has-text-link">linkedin.com/in/danielmoreira</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="box">
+                        <div class="content">
+                            <p><i class="fa-brands fa-instagram has-text-primary mr-2"></i> <a href="#" class="has-text-link">instagram.com/daniel.jss</a></p>
+                            <p><i class="fa-brands fa-facebook has-text-primary mr-2"></i> <a href="#" class="has-text-link">facebook.com/danielJesus</a></p>
+                            <p><i class="fa-brands fa-youtube has-text-primary mr-2"></i> <a href="#" class="has-text-link">youtube.com/DanielMoreira</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-5 border-top">
+        <div class="container">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-12-mobile is-6-desktop has-text-centered-mobile">
+                    <p class="has-text-grey is-size-7">
+                        © 2026 Página Pessoal — Daniel de Jesus Moreira
+                    </p>
+                </div>
+                <div class="column is-12-mobile is-6-desktop has-text-right-desktop has-text-centered-mobile">
+                    <p class="has-text-grey is-size-7">
+                        Feito com HTML + Bulma 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
