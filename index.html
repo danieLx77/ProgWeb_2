@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Prático 2 - GAC116</title>
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            background-color: #f8f9fa; 
+            margin: 0; 
+        }
+        .container { 
+            background: white; 
+            padding: 2.5rem; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+            text-align: center; 
+            border: 1px solid #dee2e6;
+        }
+        .btn { 
+            display: inline-block; 
+            margin: 10px; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            color: white; 
+            border-radius: 6px; 
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+        .btn-bootstrap { background-color: #712cf9; } /* Roxo do Bootstrap */
+        .btn-bulma { background-color: #00d1b2; } /* Verde do Bulma */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top: 0; font-size: 1.5rem; color: #212529;">Desenvolvimento de Página Pessoal</h1>
+        <p style="color: #6c757d; margin-bottom: 2rem;">Daniel de Jesus Moreira</p>
+        
+        <div>
+            <a href="versao-bootstrap/index.html" class="btn btn-bootstrap">Acessar Versão Bootstrap</a>
+            <a href="versao-alternativa/index.html" class="btn btn-bulma">Acessar Versão Bulma</a>
+        </div>
+    </div>
+</body>
+</html>
